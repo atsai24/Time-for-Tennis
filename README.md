@@ -9,7 +9,7 @@
 ## Sections:
  |  **[Introduction](#introduction)**  |
  **[Data](#data)**  |
- **[Hypothesis](#not-really-a-hypothesis)**  |
+ **[Main Hypothesis](#main-hypothesis)**  |
  **[Exploration](#exploration)**  |
  **[Focused Exploration](#focused-exploration)**  |
  **[Analysis](#analysis)**  |
@@ -19,7 +19,38 @@
  
  ---
  ## Introduction
- Singles tennis is a greuling, tiring, and highly intense form of competition. Due to the nature of the 1 vs. 1, there is no delegating or relying on teammates. Every serve, point, and hit relies entirely upon the individual player's performance, thus it is natural for players to take time between points to gather and ready themselves for the next serve. In this analysis, I attempt to quantify these psychological factors of the game, and explore a dateset of measured times after the end of a point and before the next serve in the 2015 French Open.
+ Singles tennis is a greuling, tiring, and highly intense form of competition. Due to the nature of the 1 vs. 1, there is no delegating or relying on teammates. Every serve, point, and hit relies entirely upon the individual player's performance, thus it is natural for players to take time between points to gather and ready themselves for the next serve, especially before points that matter more. According to all-time great athlete LeBron James, "Two points is not two points. I'll explain it to you later." What did he mean by that? I'll explain it to you later.
+ 
+ Meanwhile, in this analysis, I attempt to quantify some of the psychological factors of Tennis, by exploring a dateset of measured times after the end of a point and before the next serve in the 2015 French Open. 
  
  ## Data
  The Data was collected by Carl Bialik from FiveThirtyEight for his [analysis](https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/) of why some tennis matches take so long. Using a stopwatch, he measured the time it took for 15 players to serve in the 2015 French Open.
+ 
+ Original Dataset:
+ 
+  <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/original_data.png" width="774" height="200">
+
+ 
+ 
+ Thankfully, the data was only 7 columns and relatively clean, and the datatypes for useful columns were already ideal. My next step was to filter out columns I knew I would not be using.
+ 
+ Filtered Dataset:
+ 
+ <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/filtered_data.png" width="562" height="200">
+ 
+ ## Main Hypothesis
+  What I think LeBron was trying to say is that every point shows up the same on the scoreboard, but that doesn't mean they have the same impact on the outcome of the game. A vicous dunk can rile a crowd, demoralize the opposition, and swing momentum for your team, the same way winning an intense 20 hit rally, or losing a set point on an ace can have similar effects in tennis. Thus, one would think that tennis players would give themselves more time to prepare before serving on points that matter more, like game-points or set-points.
+
+Hypothesis: Tennis players will take more time to serve before High-Pressure points when compared to Not-High-Pressure points.
+
+## Exploration
+My First step was to determine what constitutes a High-Pressure point. I decided on any point where one player has the potential to win or lose the game on that point. In other words, any time the score included "40", "Ad-in", or "Ad-out".
+
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/hist_of_serve_times.png">
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/hist_of_hp_serve_times.png">
+ <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/hist_of_not_hp_serve_times.png">
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/density_comparison.png" width="432" height="288">
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/score_comparison.png">
+
+
+## Statistical Analysis
