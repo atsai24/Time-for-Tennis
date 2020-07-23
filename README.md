@@ -46,7 +46,7 @@ Hypothesis: Tennis players will take more time to serve before High-Pressure poi
 ## Exploration
 My First step was to determine what constitutes a High-Pressure point. I decided on any point where one player has the potential to win or lose the game on that point. In other words, any time the score included "40", "Ad-in", or "Ad-out".
 
-<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/hist_of_serve_times.png">
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/hist_of_serve_times.png" width="432" height="288">
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/hist_of_hp_serve_times.png">
  <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/hist_of_not_hp_serve_times.png">
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/density_comparison.png" width="432" height="288">
