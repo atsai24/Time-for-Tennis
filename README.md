@@ -41,7 +41,7 @@ In this analysis, I attempt to quantify some of the psychological factors of Ten
  ## Main Hypothesis
   What I think LeBron was trying to say is that every point shows up the same on the scoreboard, but that doesn't mean they have the same impact on the outcome of the game. A vicous dunk can rile a crowd, demoralize the opposition, and swing momentum for your team, the same way winning an intense 20 hit rally, or losing a set point on an ace can have similar effects in tennis. Thus, one would think that tennis players would give themselves more time to prepare before serving on points that matter more, like game-points or set-points.
 
-Hypothesis: Tennis players will take more time to serve before High-Pressure points when compared to Not-High-Pressure points.
+- Hypothesis: Tennis players will take more time to serve before High-Pressure points when compared to Not-High-Pressure points.
 
 ## Exploration
 My First step was to determine what constitutes a High-Pressure point. I decided on any point where one player has the potential to win or lose the game on that point. In other words, any time the score included "40", "Ad-in", or "Ad-out".
