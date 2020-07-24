@@ -111,7 +111,7 @@ I wanted to go a bit deeper and find additional factors for the increase in time
 
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/p_val_region.png" width="1600" height="400">
 
-The difference between High-Pressure and Not-High-Pressure serve times is clearly significant, and that is largely attributed to points in which the server is about to lose.
+The difference between High-Pressure and Not-High-Pressure serve times is clearly significant, so we reject the null hypothesis. This difference is largely attributed to points in which the server is about to lose.
 
 ## Takeaways
 
