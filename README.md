@@ -91,4 +91,7 @@ I wanted to go a bit deeper and find additional factors for the increase in time
 
     - p<sub>dist from  err</sub> = 0.00000245979901891
 
-<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/p_val_region.png">
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/p_val_region.png" width="1600" height="400">
+
+                                                                                                           
+                                                                                                              
