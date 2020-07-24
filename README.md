@@ -20,7 +20,9 @@
  Singles tennis is a greuling, tiring, and highly intense form of competition. Due to the nature of the 1 vs. 1, there is no delegating or relying on teammates. Every serve, point, and hit relies entirely upon the individual player's performance, thus it is natural for players to take time between points to gather and ready themselves for the next serve. However, not every point is created equal; some points effect the game more than others. According to all-time great athlete LeBron James, "Two points is not two points. I'll explain it to you later." What did he mean by that? I'll explain it to you later.
  
 In this analysis, I attempt to quantify some of the psychological factors of Tennis, by exploring a dateset of measured times after the end of a point and before the next serve in the 2015 French Open. 
- 
+
+<sub>[  **[Back to Sections](#sections)** ]</sub>
+
  ## Data
  The Data was collected by Carl Bialik from FiveThirtyEight for his [analysis](https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/) of why some tennis matches take so long. Using a stopwatch, he measured the time it took for 15 players to serve in the 2015 French Open. The dataset contains 120 entries in total.
  
@@ -36,10 +38,14 @@ In this analysis, I attempt to quantify some of the psychological factors of Ten
  
  <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/filtered_data.png" width="562" height="200">
  
+ <sub>[  **[Back to Sections](#sections)** ]</sub>
+ 
  ## Main Hypothesis
   What I think LeBron was trying to say is that every point shows up the same on the scoreboard, but that doesn't mean they have the same impact on the outcome of the game. A vicous dunk can rile a crowd, demoralize the opposition, and swing momentum for your team, the same way winning an intense 20 hit rally, or losing a set point on an ace can have similar effects in tennis. Thus, one would think that tennis players would give themselves more time to prepare before serving on points that matter more, like game-points or set-points.
 
 - Hypothesis: Tennis players will take more time to serve before High-Pressure points when compared to Not-High-Pressure points.
+
+<sub>[  **[Back to Sections](#sections)** ]</sub>
 
 ## Exploration
 My First step was to determine what constitutes a High-Pressure point. I decided on any point where one player has the potential to win or lose the game on that point. In other words, any time the score included "40", "Ad-in", or "Ad-out".
@@ -57,6 +63,8 @@ My First step was to determine what constitutes a High-Pressure point. I decided
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/score_comparison.png">
 </details> 
 
+<sub>[  **[Back to Sections](#sections)** ]</sub>
+
 ## Statistical Analysis
 
 - Null Hypothesis: There is no difference in serve times for High-Pressure and Not-High-Pressure points (sample mean = 19.54 seconds)
@@ -73,6 +81,8 @@ First, I had to create a distribution of sample means for Not-High-Pressure poin
 2. The much easier way was to calculate the standard error from the Not-High-Pressure data and create a normal distribution using the original sample mean and standard error.
 
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/dist_of_sample_means_not_hp.png">
+
+<sub>[  **[Back to Sections](#sections)** ]</sub>
 
 ## Results
 From here I was able to calculate the p-value of the High-Pressure Sample Mean (21.263 seconds). To be thorough, I calculated this value for both of the sample mean distributions I created.
@@ -121,5 +131,6 @@ Final Thoughts
 
 - Don't spend so much time trying to fit data to a skewed distribution. Believe in the Central Limit Theorem.
 
+<sub>[  **[Back to Sections](#sections)** ]</sub>
 
                                                                                                               
