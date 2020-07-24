@@ -13,9 +13,7 @@
  **[Exploration](#exploration)**  |
  **[Statistical Analysis](#statistical-analysis)**  |
  **[Results](#results)**  |
- **[Future](#future)**  |<br><br>
- |  **[Takeaways](#takeaways)**  |
- **[Shoutouts](#shoutouts)**  |
+ **[Takeaways](#takeaways)**  |
  
  ---
  ## Introduction
@@ -24,7 +22,7 @@
 In this analysis, I attempt to quantify some of the psychological factors of Tennis, by exploring a dateset of measured times after the end of a point and before the next serve in the 2015 French Open. 
  
  ## Data
- The Data was collected by Carl Bialik from FiveThirtyEight for his [analysis](https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/) of why some tennis matches take so long. Using a stopwatch, he measured the time it took for 15 players to serve in the 2015 French Open.
+ The Data was collected by Carl Bialik from FiveThirtyEight for his [analysis](https://fivethirtyeight.com/features/why-some-tennis-matches-take-forever/) of why some tennis matches take so long. Using a stopwatch, he measured the time it took for 15 players to serve in the 2015 French Open. The dataset contains 120 entries in total.
  
  Original Dataset:
  
@@ -61,9 +59,9 @@ My First step was to determine what constitutes a High-Pressure point. I decided
 
 ## Statistical Analysis
 
-- Null Hypothesis: There is no difference in serve times for High-Pressure and Not-High-Pressure points (sample mean = 19.54)
+- Null Hypothesis: There is no difference in serve times for High-Pressure and Not-High-Pressure points (sample mean = 19.54 seconds)
 
-- Alternative Hypothesis: The serve times for High-Pressure points is greater than those for Not-High-Pressure points (sample mean > 19.54)
+- Alternative Hypothesis: The serve times for High-Pressure points is greater than those for Not-High-Pressure points (sample mean > 19.54 seconds)
 
 - &alpha; = 0.05
 
@@ -77,27 +75,51 @@ First, I had to create a distribution of sample means for Not-High-Pressure poin
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/dist_of_sample_means_not_hp.png">
 
 ## Results
-From here I was able to calculate the p-value of the High-Pressure Sample Mean (21.263). To be thorough, I calculated this value for both of the sample mean distributions I created.
+From here I was able to calculate the p-value of the High-Pressure Sample Mean (21.263 seconds). To be thorough, I calculated this value for both of the sample mean distributions I created.
 
-- p<sub>dist from skew</sub> = 0.01970741415094779
+- p<sub>dist from skew</sub> = 0.01970
 
-- p<sub>dist from err</sub> = 0.023405181719318935
+- p<sub>dist from err</sub> = 0.02340
 
 I wanted to go a bit deeper and find additional factors for the increase in time taken before High-Pressure Points. I split the High-Pressure Data into 2 categories:
 
 1. About to Win: [40-0, 40-15, 40-30, Ad-in]
 
-    - p<sub>dist from skew</sub> = 0.432394115132284
+    - mean = 19.636 seconds
 
-    - p<sub>dist from  err</sub> = 0.45560172546205957
+    - p<sub>dist from skew</sub> = 0.43239
+
+    - p<sub>dist from  err</sub> = 0.45560
     
 2. About to Lose: [0-40, 15-40, 30-40, Ad-out]
 
-    - p<sub>dist from skew</sub> = 0.00000159681100575
+    - mean = 23.5 seconds
 
-    - p<sub>dist from  err</sub> = 0.00000245979901891
+    - p<sub>dist from skew</sub> = 1.59681e-06
+
+    - p<sub>dist from  err</sub> = 2.45979e-06
 
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/p_val_region.png" width="1600" height="400">
 
-                                                                                                           
+The difference between High-Pressure and Not-High-Pressure serve times is clearly significant, and that is largely attributed to points in which the server is about to lose.
+
+## Takeaways
+
+The more data the better
+
+- I was rather limited in the comparisons I could make due to lack of data.
+    
+- Unable to compare between players, or between game, set, and match points
+    
+Things to look into in the future with more data
+
+- Are these results replicable for other Opens with different court surfaces (Clay, Grass, Hard, Carpet)?
+   
+- Were players more likely to win if they took longer to serve?
+
+Final Thoughts
+
+- Don't spend so much time trying to fit data to a skewed distribution. Believe in the Central Limit Theorem.
+
+
                                                                                                               
