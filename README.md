@@ -11,8 +11,8 @@
  **[Data](#data)**  |
  **[Main Hypothesis](#main-hypothesis)**  |
  **[Exploration](#exploration)**  |
- **[Focused Exploration](#focused-exploration)**  |
- **[Analysis](#analysis)**  |
+ **[Statistical Analysis](#statistical-analysis)**  |
+ **[Results](#results)**  |
  **[Future](#future)**  |<br><br>
  |  **[Takeaways](#takeaways)**  |
  **[Shoutouts](#shoutouts)**  |
@@ -54,3 +54,41 @@ My First step was to determine what constitutes a High-Pressure point. I decided
 
 
 ## Statistical Analysis
+
+- Null Hypothesis: There is no difference in serve times for High-Pressure and Not-High-Pressure points (sample mean = 19.54)
+
+- Alternative Hypothesis: The serve times for High-Pressure points is greater than those for Not-High-Pressure points (sample mean > 19.54)
+
+- &alpha; = 0.05
+
+- Run a z-test comparing the sample mean of High-Pressure points to the distribution of sample means for Not-High-Pressure points
+
+First, I had to create a distribution of sample means for Not-High-Pressure points. I did this in 2 ways:
+
+1. Fit the original data on Not-High-Pressure points to a skewed distribution, then collect the means of 1000 samples (size = 63) from the distribution.
+2. The much easier way was to calculate the standard error from the Not-High-Pressure data and create a normal distribution using the original sample mean and standard error.
+
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/dist_of_sample_means_not_hp.png">
+
+## Results
+From here I was able to calculate the p-value of the High-Pressure Sample Mean (21.263). To be thorough, I calculated this value for both of the sample mean distributions I created.
+
+- p<sub>dist from skew</sub> = 0.01970741415094779
+
+- p<sub>dist from err</sub> = 0.023405181719318935
+
+I wanted to go a bit deeper and find additional factors for the increase in time taken before High-Pressure Points. I split the High-Pressure Data into 2 categories:
+
+1. About to Win: [40-0, 40-15, 40-30, Ad-in]
+
+    - p<sub>dist from skew</sub> = 0.432394115132284
+
+    - p<sub>dist from  err</sub> = 0.45560172546205957
+    
+2. About to Lose: [0-40, 15-40, 30-40, Ad-out]
+
+    - p<sub>dist from skew</sub> = 0.00000159681100575
+
+    - p<sub>dist from  err</sub> = 0.00000245979901891
+
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/p_val_region.png">
