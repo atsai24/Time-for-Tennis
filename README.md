@@ -81,7 +81,7 @@ First, I had to create a distribution of sample means for Not-High-Pressure poin
 
 <details>
   <summary>
-    Show Graphs
+    Show Graph
   </summary>
 <br>
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/skewed_distribution.png">
