@@ -67,9 +67,9 @@ My First step was to determine what constitutes a High-Pressure point. I decided
 
 ## Statistical Analysis
 
-- Null Hypothesis: There is no difference in serve times for High-Pressure and Not-High-Pressure points (sample mean = 19.54 seconds)
+- Null Hypothesis: There is no difference in serve times for High-Pressure and Not-High-Pressure points (mean = 19.54 seconds)
 
-- Alternative Hypothesis: The serve times for High-Pressure points is greater than those for Not-High-Pressure points (sample mean > 19.54 seconds)
+- Alternative Hypothesis: The serve times for High-Pressure points is greater than those for Not-High-Pressure points (mean > 19.54 seconds)
 
 - &alpha; = 0.05
 
