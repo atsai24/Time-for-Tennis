@@ -78,6 +78,15 @@ My First step was to determine what constitutes a High-Pressure point. I decided
 First, I had to create a distribution of sample means for Not-High-Pressure points. I did this in 2 ways:
 
 1. Fit the original data on Not-High-Pressure points to a skewed distribution, then collect the means of 1000 samples (size = 63) from the distribution.
+
+<details>
+  <summary>
+    Show Graphs
+  </summary>
+<br>
+<img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/skewed_distribution.png">
+</details>
+
 2. The much easier way was to calculate the standard error from the Not-High-Pressure data and create a normal distribution using the original sample mean and standard error.
 
 <img src="https://github.com/atsai24/Time-for-Tennis/blob/master/images/dist_of_sample_means_not_hp.png">
